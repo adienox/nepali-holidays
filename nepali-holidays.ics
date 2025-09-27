@@ -1,0 +1,356 @@
+BEGIN:VCALENDAR
+DESCRIPTION:Nepali holidays extracted from Wikipedia
+NAME:Nepali Holidays
+BEGIN:VEVENT
+SUMMARY:International Workers' Day (मजदुर दिवस)
+DTSTART;VALUE=DATE:20250501
+DTEND;VALUE=DATE:20250502
+DESCRIPTION:International Workers' Day (Baishak 18)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Republic Day (गणतन्त्र दिवस)
+DTSTART;VALUE=DATE:20250529
+DTEND;VALUE=DATE:20250530
+DESCRIPTION:Republic Day in Nepal. (Jestha 15)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Constitution Day (संविधान दिवस)
+DTSTART;VALUE=DATE:20250919
+DTEND;VALUE=DATE:20250920
+DESCRIPTION:Constitution Day in Nepal. (Ashoj 3)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Martyrs' Day (शहिद दिवस)
+DTSTART;VALUE=DATE:20250130
+DTEND;VALUE=DATE:20250131
+DESCRIPTION:Martyrs' Day in Nepal remembering the first four Martyrs of Ne
+ pal. (Magh 16)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Democracy Day (प्रजातन्त्र दिवस)
+DTSTART;VALUE=DATE:20250219
+DTEND;VALUE=DATE:20250220
+DESCRIPTION:Democracy day of Nepal. (Fagun 7)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:International Women's Day (नारी दिवस)
+DTSTART;VALUE=DATE:20250308
+DTEND;VALUE=DATE:20250309
+DESCRIPTION:International Women's Day is celebrated on this day in Nepal. 
+ (Fagun 24)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nepalese New Year (नयाँ बर्ष)
+DTSTART;VALUE=DATE:20250414
+DTEND;VALUE=DATE:20250415
+DESCRIPTION:First day of Bikram Sambat calendar. (Baishak 1)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Buddha Jayanti (बुद्द जयन्त्री)
+DTSTART;VALUE=DATE:20250512
+DTEND;VALUE=DATE:20250513
+DESCRIPTION:Birth date of Lord Gautam Buddha. (Baishak 29)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Eid al-Adha (इद उल अजाहा)
+DTSTART;VALUE=DATE:20250607
+DTEND;VALUE=DATE:20250608
+DESCRIPTION:"Sacrifice Feast"\, the willingness of Abraham to sacrifice hi
+ s son Ishmael. (Jestha 24)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Raksha Bandhan (रक्षा बन्धन/जनै पु
+ र्णिमा)
+DTSTART;VALUE=DATE:20250809
+DTEND;VALUE=DATE:20250810
+DESCRIPTION:Sacred thread festival\, Janai Purnima marks the renewal of th
+ e sacred thread by Brahmins. Raksha Bandhan celebrates the holi bond betwe
+ en brothers and sisters. (Shrawan 24)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Krishna Janmashtami (कृष्णा जन्माअष्
+ टमी)
+DTSTART;VALUE=DATE:20250816
+DTEND;VALUE=DATE:20250817
+DESCRIPTION:Celebrates the birth of Lord Krishna (Shrawan 31)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ghatasthapana (घटस्थापना)
+DTSTART;VALUE=DATE:20250922
+DTEND;VALUE=DATE:20250923
+DESCRIPTION:The beginning of Dashain. (Ashwoj 6)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fulpati (फुलपाती)
+DTSTART;VALUE=DATE:20250929
+DTEND;VALUE=DATE:20250930
+DESCRIPTION:Seventh day of Dashaini when jamara is brought from Gorkha pal
+ ace to Kathmandu. (Ashoj 13)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Maha Asthami (महा अष्टमी)
+DTSTART;VALUE=DATE:20250930
+DTEND;VALUE=DATE:20251001
+DESCRIPTION:The day to appease Goddess Durga's manifestations\, the blood-
+ thirsty Kali. (Ashoj 14)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Maha Navami (महा नवमी)
+DTSTART;VALUE=DATE:20251001
+DTEND;VALUE=DATE:20251002
+DESCRIPTION:Maha Navami is the last day of Navaratri. (Ashoj 15)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Vijayadashami (विजया दशमी)
+DTSTART;VALUE=DATE:20251002
+DTEND;VALUE=DATE:20251003
+DESCRIPTION:This day is very important day for Nepalese Hindu religion\, O
+ n Bijaya Dashami mixture of rice\, yogurt and vermilion is prepared and is
+  known as Tika. Elders put Tika\, Jamara and Kokha on the young ones and g
+ ive them blessing. (Ashoj 16)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Yekadashi (एकादशी)
+DTSTART;VALUE=DATE:20251003
+DTEND;VALUE=DATE:20251004
+DESCRIPTION:Eleventh day of Dashain where the celebration continues. (Asho
+ j 17)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Duwadashi (दुवादशी)
+DTSTART;VALUE=DATE:20251004
+DTEND;VALUE=DATE:20251005
+DESCRIPTION:The final official consecutive holiday of Dashain celebration.
+  (Ashoj 18)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Laxmi Puja (लक्ष्मी पुजा)
+DTSTART;VALUE=DATE:20251020
+DTEND;VALUE=DATE:20251021
+DESCRIPTION:In the morning cows are worshipped. Later\, usually during the
+  evenings\, Laxmi\, Goddess of wealth is worshipped. (Kartik 3)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tihar Holiday (तिहार बिदा)
+DTSTART;VALUE=DATE:20251021
+DTEND;VALUE=DATE:20251022
+DESCRIPTION:Additional Holiday (Kartik 4)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mha Puja and Govardhan Puja Nepal Sambat new year. (म्ह प
+ ुजा)
+DTSTART;VALUE=DATE:20251022
+DTEND;VALUE=DATE:20251023
+DESCRIPTION:Mostly Mha Puja celebrates by Newari People. (Kartik 5)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bhaitika (भाइ टिका)
+DTSTART;VALUE=DATE:20251023
+DTEND;VALUE=DATE:20251024
+DESCRIPTION:Sisters and brothers wish for each other's safety and well-bei
+ ng. Gifts are exchanged between them. (Kartik 6)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tihar Holiday (तिहार बिदा)
+DTSTART;VALUE=DATE:20251024
+DTEND;VALUE=DATE:20251025
+DESCRIPTION:Additional Holiday (Kartik 7)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Chhath Parwa (छठ पर्व)
+DTSTART;VALUE=DATE:20251027
+DTEND;VALUE=DATE:20251028
+DESCRIPTION:A festival dedicated to Hindu Sun God. (Kartik 10)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Yomari Punhi and Jyapu Diwas (याेमारी पुन्
+ हीं)
+DTSTART;VALUE=DATE:20251204
+DTEND;VALUE=DATE:20251205
+DESCRIPTION:A festival marking the end of the rice harvest. (Mangshir 18)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Christmas Day (क्रिसमस डे)
+DTSTART;VALUE=DATE:20251225
+DTEND;VALUE=DATE:20251226
+DESCRIPTION:Birthday of Jesus Christ. (Push 10)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tamu Lhosar (तमु ल्हाेसार)
+DTSTART;VALUE=DATE:20251230
+DTEND;VALUE=DATE:20251231
+DESCRIPTION:New year celebrated by the Gurung Community. (Poush 15)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prithvi Jayanti (पृथ्वी जयन्ती)
+DTSTART;VALUE=DATE:20250111
+DTEND;VALUE=DATE:20250112
+DESCRIPTION:Birthday of Prithvi Narayan Shah. (Push 27)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Maghe Sankranti (माघे संंक्रान्ती)
+DTSTART;VALUE=DATE:20250115
+DTEND;VALUE=DATE:20250116
+DESCRIPTION:The first day of the month of Magh. (Magh 1)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sonam Lhosar (शाेनाम ल्हाेसार)
+DTSTART;VALUE=DATE:20250119
+DTEND;VALUE=DATE:20250120
+DESCRIPTION:New Year celebration by the Tamang community. (Magh 5)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Maha Shivaratri (महा शिवरात्री)
+DTSTART;VALUE=DATE:20250215
+DTEND;VALUE=DATE:20250216
+DESCRIPTION:Celebrated in reverence of Lord Shiva. (Fagun 3)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Gyalpo Lhosar (ग्याल्पाे ल्हाेसा
+ र)
+DTSTART;VALUE=DATE:20250218
+DTEND;VALUE=DATE:20250219
+DESCRIPTION:New Year of Tibetan Community. (Fagun 6)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fagu Purnima (फागु पुर्णिमा)
+DTSTART;VALUE=DATE:20250302
+DTEND;VALUE=DATE:20250303
+DESCRIPTION:Also known as Holi\, the festival of colors. In Terai region o
+ f Nepal\, this festival is celebrated on the next day. (Fagun 18)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fagu Purnima (फागु पुर्णिमा)
+DTSTART;VALUE=DATE:20250303
+DTEND;VALUE=DATE:20250304
+DESCRIPTION:In Tarai Region (Fagun 19)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ram Nawami (राम नवमी)
+DTSTART;VALUE=DATE:20250327
+DTEND;VALUE=DATE:20250328
+DESCRIPTION:Birth date of Lord Ram (Chaitra 13)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Eid al-Fitr (इद उल फित्र)
+DTSTART;VALUE=DATE:20250331
+DTEND;VALUE=DATE:20250401
+DESCRIPTION:End of the month of Ramadan (Festival of Fastbreaking). (17 Ch
+ aitra)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Siruwa Parba (सिरूवा पर्व)
+DTSTART;VALUE=DATE:20250414
+DTEND;VALUE=DATE:20250415
+DESCRIPTION:Only in Jhapa\, Morang\, Sunsari\, Siraha & Saptari districts.
+  (Baishak 1)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bhoto Jatra (भाेटाे देखाउने जात्
+ रा)
+DTSTART;VALUE=DATE:20250601
+DTEND;VALUE=DATE:20250602
+DESCRIPTION:Only holiday in Kathmandu Valley (Jestha 18)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Gai Jatra (गाइ जात्रा)
+DTSTART;VALUE=DATE:20250810
+DTEND;VALUE=DATE:20250811
+DESCRIPTION:Holiday only for Newar Community all over Nepal & Bagmati Prov
+ ince (Shrawan 25)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teej (तिज)
+DTSTART;VALUE=DATE:20250826
+DTEND;VALUE=DATE:20250827
+DESCRIPTION:Only Holiday for women (Bhadra 10)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Gaura Parwa (गाैरा पर्व)
+DTSTART;VALUE=DATE:20250831
+DTEND;VALUE=DATE:20250901
+DESCRIPTION:Only in Sudurpashchim Province. (Bhadra 15)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Indra Jatra (इन्द्र जात्रा)
+DTSTART;VALUE=DATE:20250906
+DTEND;VALUE=DATE:20250907
+DESCRIPTION:Celebrated only in Kathmandu valley\, so holiday in Kathmandu 
+ Valley only (Bhadra 21)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jeetiya Parwa (जितिया पर्व)
+DTSTART;VALUE=DATE:20250915
+DTEND;VALUE=DATE:20250916
+DESCRIPTION:Only for Jeetiya Festival celebrating women. (Bhadra 30)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Guru Nanak Jayanti (गुरू नानक जयन्ती)
+DTSTART;VALUE=DATE:20251105
+DTEND;VALUE=DATE:20251106
+DESCRIPTION:Holiday for only Sikh Community (Kartik 19)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Falgunanda Jayanti (फाल्गुणन्द जयन्त
+ ी)
+DTSTART;VALUE=DATE:20251111
+DTEND;VALUE=DATE:20251112
+DESCRIPTION:Holiday for only Kirat Community (Kartik 25)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:International Disabilities Day (अन्तराष्ट्र
+ िय अपांगता दिवस)
+DTSTART;VALUE=DATE:20251203
+DTEND;VALUE=DATE:20251204
+DESCRIPTION:Holiday for only Disabled Person. (Mangshir 17)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Muhammad Jayanti (माेहम्मद जयन्ती)
+DTSTART;VALUE=DATE:20251110
+DTEND;VALUE=DATE:20251111
+DESCRIPTION:Holiday for only Muslim Community (Mangshir 24)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Saraswati Puja (सरस्वती पुजा)
+DTSTART;VALUE=DATE:20250123
+DTEND;VALUE=DATE:20250124
+DESCRIPTION:Educational institution only. (Magh 9)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ghode Jatra (घाेडे जात्रा)
+DTSTART;VALUE=DATE:20250318
+DTEND;VALUE=DATE:20250319
+DESCRIPTION:Holiday Only in Kathmandu Valley (Chaitra 4)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:World Environment Day (विश्व वातावरण द
+ िवस)
+DTSTART;VALUE=DATE:20250605
+DTEND;VALUE=DATE:20250606
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bhanu Jayanti (भानु जयन्ती)
+DTSTART;VALUE=DATE:20250713
+DTEND;VALUE=DATE:20250714
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:International Tiger Day
+DTSTART;VALUE=DATE:20250729
+DTEND;VALUE=DATE:20250730
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Children's Day (बाल दिवस)
+DTSTART;VALUE=DATE:20250914
+DTEND;VALUE=DATE:20250915
+DESCRIPTION:Bhadra 29
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mountain Day
+DTSTART;VALUE=DATE:20251211
+DTEND;VALUE=DATE:20251212
+DESCRIPTION:
+END:VEVENT
+END:VCALENDAR
