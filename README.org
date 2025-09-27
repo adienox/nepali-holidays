@@ -1,5 +1,5 @@
 * Nepali Holidays Parser
-This project scrapes public holidays in Nepal from Wikipedia and generates an iCalendar (.ics) file containing these holidays.
+This project scrapes public holidays in Nepal from [[https://en.wikipedia.org/wiki/Public_holidays_in_Nepal][Wikipedia]] and generates an iCalendar (.ics) file containing these holidays.
 
 ** Requirements
 - Python 3.13 or higher
@@ -17,9 +17,9 @@ git clone https://github.com/adienox/nepali-holidays
 cd nepali-holidays
 #+END_SRC
 
-2. Install the required dependencies. You can use `pip`:
+2. Install the required dependencies. You can use ~uv~:
 #+BEGIN_SRC bash
-pip install pandas html5lib beautifulsoup4 icalendar requests
+uv add pandas html5lib beautifulsoup4 icalendar requests
 #+END_SRC
 
 ** Usage
