@@ -25,6 +25,11 @@ uv add pandas html5lib beautifulsoup4 icalendar requests
 ** Usage
 To generate the ~nepali-holidays.ics~ file, run the following command:
 #+BEGIN_SRC bash
+uv run parser.py
+#+END_SRC
+
+Or, you can run the script without installing any dependencies using uv scripts.
+#+BEGIN_SRC bash
 uv run --script parser.py
 #+END_SRC
 
