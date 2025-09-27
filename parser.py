@@ -11,6 +11,7 @@
 # ]
 # ///
 
+import os
 from datetime import timedelta
 
 import pandas as pd
@@ -71,7 +72,8 @@ for _, row in final_df.iterrows():
 
     cal.add_component(event)
 
-with open("nepali-holidays.ics", "wb") as f:
+os.makedirs("public", exist_ok=True)
+with open("public/nepali-holidays.ics", "wb") as f:
     f.write(cal.to_ical())
 
 print("✅ nepali-holidays.ics created")

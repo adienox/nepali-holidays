@@ -1,0 +1,47 @@
+name: Parse Holidays
+
+permissions:
+  pages: write
+  id-token: write
+
+jobs:
+  parse-holidays:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+            enable-cache: true
+
+      - name: Install the project
+        run: uv sync --locked
+
+      - name: Run parser
+        run: uv run parser.py
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload calendar
+        uses: actions/upload-page-artifact@v4
+        with:
+          path: public/nepali-holidays.ics
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
