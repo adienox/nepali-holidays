@@ -101,6 +101,8 @@ def main():
         df = parse_table(table_html)
     except Exception as e:
         print(f"❌ Error fetching or parsing table: {e}")
+        with open("debug.html", "w", encoding="utf-8") as f:
+            f.write(table_html)
         return
 
     calendar = create_calendar(df)
