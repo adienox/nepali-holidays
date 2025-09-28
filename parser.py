@@ -31,11 +31,17 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
 }
 
+DEBUG_HTML_PATH = "debug.html"
+
 
 def fetch_wikitable_html(url: str) -> str:
     """Fetch HTML for the first table with class 'wikitable'."""
     resp = requests.get(url, headers=HEADERS)
     resp.raise_for_status()
+
+    # Save debug HTML for GitHub Actions inspection
+    with open(DEBUG_HTML_PATH, "w", encoding="utf-8") as f:
+        f.write(resp.text)
 
     soup = BeautifulSoup(resp.text, "html.parser")
     table = soup.find_all("table", {"class": "wikitable"})
