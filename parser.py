@@ -34,7 +34,7 @@ HEADERS = {
 DEBUG_HTML_PATH = "debug.html"
 
 
-def fetch_wikitable_html(url: str) -> str:
+def fetch_wikitable_html(url: str) -> list:
     """Fetch HTML for the first table with class 'wikitable'."""
     resp = requests.get(url, headers=HEADERS)
     resp.raise_for_status()
@@ -44,20 +44,25 @@ def fetch_wikitable_html(url: str) -> str:
         f.write(resp.text)
 
     soup = BeautifulSoup(resp.text, "html.parser")
-    table = soup.find_all("table", {"class": "wikitable"})
+    tables = soup.find_all("table", {"class": "wikitable"})
 
-    if not table:
+    if not tables:
         raise ValueError("No table with class 'wikitable' found on the page.")
 
-    return str(table)
+    return tables
 
 
-def parse_table(html: str) -> pd.DataFrame:
+def parse_table(tables: list) -> pd.DataFrame:
     """Parse HTML table into a DataFrame."""
-    tables = pd.read_html(StringIO(html), flavor="html5lib")
-    if not tables:
+    dfs = []
+    for item in tables:
+        table = pd.read_html(StringIO(str(item)), flavor="html5lib")
+        dfs.extend(table)
+
+    if not dfs:
         raise ValueError("No tables could be parsed from HTML.")
-    return pd.concat(tables, ignore_index=True)
+
+    return pd.concat(dfs, ignore_index=True)
 
 
 def create_calendar(df: pd.DataFrame) -> Calendar:
@@ -107,8 +112,8 @@ def main():
     os.makedirs("public", exist_ok=True)
 
     try:
-        table_html = fetch_wikitable_html(URL)
-        df = parse_table(table_html)
+        tables = fetch_wikitable_html(URL)
+        df = parse_table(tables)
     except Exception as e:
         print(f"❌ Error fetching or parsing table: {e}")
         sys.exit(1)
