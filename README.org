@@ -5,7 +5,7 @@ This project scrapes public holidays in Nepal from [[https://en.wikipedia.org/wi
 - Python 3.13 or higher
 - Dependencies:
   - pandas
-  - html5lib
+  - lxml
   - beautifulsoup4
   - icalendar
   - requests
