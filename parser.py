@@ -3,7 +3,7 @@
 # /// script
 # dependencies = [
 #     "pandas",
-#     "html5lib",
+#     "lxml",
 #     "beautifulsoup4",
 #     "icalendar",
 #     "requests",
@@ -56,7 +56,7 @@ def parse_table(tables: list) -> pd.DataFrame:
     """Parse HTML table into a DataFrame."""
     dfs = []
     for item in tables:
-        table = pd.read_html(StringIO(str(item)), flavor="html5lib")
+        table = pd.read_html(StringIO(str(item)), flavor="lxml")
         dfs.extend(table)
 
     if not dfs:
