@@ -40,6 +40,13 @@ jobs:
         with:
           path: public
 
+      - name: Upload debug HTML on failure
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: debug-html
+          path: debug.html
+
   deploy:
     environment:
       name: github-pages
