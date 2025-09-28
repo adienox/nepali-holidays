@@ -13,9 +13,11 @@
 
 import os
 from datetime import timedelta
+from io import StringIO
 
 import pandas as pd
 import requests
+from bs4 import BeautifulSoup
 from dateutil import parser
 from icalendar import Calendar, Event
 
@@ -28,7 +30,12 @@ headers = {
 response = requests.get(url, headers=headers)
 response.raise_for_status()
 
-tables = pd.read_html(response.text, attrs={"class": "wikitable"}, flavor="bs4")
+soup = BeautifulSoup(response.text, "html.parser")
+wikitable_html = str(soup.find("table", {"class": "wikitable"}))
+
+tables = pd.read_html(
+    StringIO(wikitable_html), attrs={"class": "wikitable"}, flavor="bs4"
+)
 
 final_df = pd.concat(tables, ignore_index=True)
 
