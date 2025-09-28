@@ -12,6 +12,7 @@
 # ///
 
 import os
+import sys
 from datetime import timedelta
 from io import StringIO
 
@@ -104,9 +105,7 @@ def main():
         df = parse_table(table_html)
     except Exception as e:
         print(f"❌ Error fetching or parsing table: {e}")
-        with open("debug.html", "w", encoding="utf-8") as f:
-            f.write(table_html)
-        return
+        sys.exit(1)
 
     calendar = create_calendar(df)
 
