@@ -49,20 +49,17 @@ def fetch_wikitable_html(url: str) -> list:
     if not tables:
         raise ValueError("No table with class 'wikitable' found on the page.")
 
-    return tables
+    return str(tables)
 
 
-def parse_table(tables: list) -> pd.DataFrame:
+def parse_table(html: str) -> pd.DataFrame:
     """Parse HTML table into a DataFrame."""
-    dfs = []
-    for item in tables:
-        table = pd.read_html(StringIO(str(item)), flavor="lxml")
-        dfs.extend(table)
+    tables = pd.read_html(StringIO(html), flavor="lxml")
 
-    if not dfs:
+    if not tables:
         raise ValueError("No tables could be parsed from HTML.")
 
-    return pd.concat(dfs, ignore_index=True)
+    return pd.concat(tables, ignore_index=True)
 
 
 def create_calendar(df: pd.DataFrame) -> Calendar:
