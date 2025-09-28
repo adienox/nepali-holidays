@@ -54,7 +54,7 @@ def fetch_wikitable_html(url: str) -> str:
 
 def parse_table(html: str) -> pd.DataFrame:
     """Parse HTML table into a DataFrame."""
-    tables = pd.read_html(StringIO(html), flavor="bs4")
+    tables = pd.read_html(StringIO(html), flavor="html5lib")
     if not tables:
         raise ValueError("No tables could be parsed from HTML.")
     return pd.concat(tables, ignore_index=True)
