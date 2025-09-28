@@ -42,7 +42,7 @@ jobs:
 
       - name: Upload debug HTML on failure
         if: failure()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: debug-html
           path: debug.html
