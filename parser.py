@@ -92,7 +92,6 @@ def create_calendar(df: pd.DataFrame) -> Calendar:
 
         description_parts = []
         if isinstance(remarks, str):
-            remarks = remarks.replace("\\,", ",")
             description_parts.append(remarks)
         if isinstance(date_bs, str):
             description_parts.append(date_bs)
