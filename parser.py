@@ -67,7 +67,7 @@ def parse_table(tables: list) -> pd.DataFrame:
 
 def create_calendar(df: pd.DataFrame) -> Calendar:
     cal = Calendar()
-    cal.add("prodid", "-//Nepali Holidays//example.com//")
+    cal.add("prodid", "Nepali Holidays")
     cal.add("version", "2.0")
     cal.add("X-WR-CALNAME", "Nepali Holidays")
     cal.add("X-WR-CALDESC", "Nepali holidays extracted from Wikipedia")
