@@ -7,12 +7,13 @@
 #     "beautifulsoup4",
 #     "icalendar",
 #     "requests",
+#     "python-dateutil",
 # ]
 # ///
 
 import os
 import sys
-from datetime import date, timedelta
+from datetime import timedelta
 from io import StringIO
 
 import pandas as pd
@@ -64,7 +65,7 @@ def parse_table(tables: list) -> pd.DataFrame:
     return pd.concat(dfs, ignore_index=True)
 
 
-def create_calendar(df: pd.DataFrame, split_date: date) -> Calendar:
+def create_calendar(df: pd.DataFrame) -> Calendar:
     cal = Calendar()
     cal.add("prodid", "Nepali Holidays")
     cal.add("version", "2.0")
@@ -83,9 +84,6 @@ def create_calendar(df: pd.DataFrame, split_date: date) -> Calendar:
 
         try:
             event_date = parser.parse(str(date_ad)).date()
-
-            if event_date <= split_date:
-                event_date = event_date.replace(year=event_date.year + 1)
         except Exception:
             print(f"⚠️ Skipping invalid date: {date_ad}")
             continue
@@ -120,12 +118,7 @@ def main():
         print(f"❌ Error fetching or parsing table: {e}")
         sys.exit(1)
 
-    split_date = df.loc[
-        df[("Date", "Date (B.S.)")] == "Baishak 1", ("Date", "Date (A.D.)")
-    ].iloc[0]
-    split_date = parser.parse(split_date).date()
-
-    calendar = create_calendar(df, split_date)
+    calendar = create_calendar(df)
 
     output_path = "public/nepali-holidays.ics"
     with open(output_path, "wb") as f:
